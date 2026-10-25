@@ -1,0 +1,266 @@
+{
+  "release_format": 1,
+  "selection_rule": "Within each setting, choose the seed among 42, 43, 44 with the lowest recorded validation minADE + 0.5 * minFDE. Each seed checkpoint was already selected on the same validation objective over trained epochs. Test metrics play no role in selecting the release checkpoint.",
+  "results_note": "Single-run checkpoint results; the paper reports three-seed averages.",
+  "checkpoints": [
+    {
+      "setting": "eth",
+      "file": "checkpoints/eth.pt",
+      "seed": 43,
+      "epoch": 87,
+      "neighbors": 8,
+      "validation_selection_value": 0.30689103993841077,
+      "validation_candidates": [
+        {
+          "seed": 42,
+          "epoch": 24,
+          "selection_value": 0.30822562371754814
+        },
+        {
+          "seed": 43,
+          "epoch": 87,
+          "selection_value": 0.30689103993841077
+        },
+        {
+          "seed": 44,
+          "epoch": 25,
+          "selection_value": 0.3105019225616691
+        }
+      ],
+      "test_metrics": {
+        "minADE": 0.39795920138687385,
+        "minFDE": 0.5946048507065536,
+        "pairedFDE": 0.751084818106412,
+        "actors": 364,
+        "num_modes": 20,
+        "units": "m"
+      },
+      "sha256": "9f1cdc24ff3cd20b231607088c44eb38027ad14e0d99d116c46e52ab9f1473c7",
+      "bytes": 1481617,
+      "original_checkpoint_sha256": "0c55e1b30f3f4f02e8469738a2b4e651d193ec21cbd745b9f688ab18e7b945e2",
+      "weights_unchanged": true
+    },
+    {
+      "setting": "hotel",
+      "file": "checkpoints/hotel.pt",
+      "seed": 43,
+      "epoch": 22,
+      "neighbors": 8,
+      "validation_selection_value": 0.3205303477323503,
+      "validation_candidates": [
+        {
+          "seed": 42,
+          "epoch": 34,
+          "selection_value": 0.3232928237349825
+        },
+        {
+          "seed": 43,
+          "epoch": 22,
+          "selection_value": 0.3205303477323503
+        },
+        {
+          "seed": 44,
+          "epoch": 45,
+          "selection_value": 0.3247959467770304
+        }
+      ],
+      "test_metrics": {
+        "minADE": 0.1338355095670149,
+        "minFDE": 0.18971039944113322,
+        "pairedFDE": 0.22057698627232536,
+        "actors": 1197,
+        "num_modes": 20,
+        "units": "m"
+      },
+      "sha256": "9e036a8a0583668b1d43f26864dcac49e8f8cffd245b176798fe80681ad4e4bd",
+      "bytes": 1481801,
+      "original_checkpoint_sha256": "f26d5b91fff9b1ab91fed54bb558ae26779bfbf516f594738d1f804bab565aeb",
+      "weights_unchanged": true
+    },
+    {
+      "setting": "univ",
+      "file": "checkpoints/univ.pt",
+      "seed": 44,
+      "epoch": 50,
+      "neighbors": 8,
+      "validation_selection_value": 0.27198040945610696,
+      "validation_candidates": [
+        {
+          "seed": 42,
+          "epoch": 28,
+          "selection_value": 0.27997583576930274
+        },
+        {
+          "seed": 43,
+          "epoch": 22,
+          "selection_value": 0.27324039661629285
+        },
+        {
+          "seed": 44,
+          "epoch": 50,
+          "selection_value": 0.27198040945610696
+        }
+      ],
+      "test_metrics": {
+        "minADE": 0.21897391015061238,
+        "minFDE": 0.39464418591289113,
+        "pairedFDE": 0.46200486896379883,
+        "actors": 24334,
+        "num_modes": 20,
+        "units": "m"
+      },
+      "sha256": "fb048a99b7d568fdb69255ddbe52ec5803e7377e36476bc0e9847fa075d80c7e",
+      "bytes": 1481741,
+      "original_checkpoint_sha256": "80a8406574a38127801745a0aa49be36fa47de123970094212d01042fb67685d",
+      "weights_unchanged": true
+    },
+    {
+      "setting": "zara1",
+      "file": "checkpoints/zara1.pt",
+      "seed": 44,
+      "epoch": 66,
+      "neighbors": 8,
+      "validation_selection_value": 0.31203159221364996,
+      "validation_candidates": [
+        {
+          "seed": 42,
+          "epoch": 30,
+          "selection_value": 0.31372606040329143
+        },
+        {
+          "seed": 43,
+          "epoch": 36,
+          "selection_value": 0.3181399142944433
+        },
+        {
+          "seed": 44,
+          "epoch": 66,
+          "selection_value": 0.31203159221364996
+        }
+      ],
+      "test_metrics": {
+        "minADE": 0.16963072428487697,
+        "minFDE": 0.3052565161292099,
+        "pairedFDE": 0.3601687980175336,
+        "actors": 2356,
+        "num_modes": 20,
+        "units": "m"
+      },
+      "sha256": "2b40b11ea45b50e935ac9f5b28e9463cdb4a8f200867ce2d16e13c0a4ff3168f",
+      "bytes": 1481801,
+      "original_checkpoint_sha256": "ca6edfe20195b9b15c04f93c0cbc5ac96e6313aa30562c6e1968319b4ecfdced",
+      "weights_unchanged": true
+    },
+    {
+      "setting": "zara2",
+      "file": "checkpoints/zara2.pt",
+      "seed": 42,
+      "epoch": 30,
+      "neighbors": 8,
+      "validation_selection_value": 0.3460804228938135,
+      "validation_candidates": [
+        {
+          "seed": 42,
+          "epoch": 30,
+          "selection_value": 0.3460804228938135
+        },
+        {
+          "seed": 43,
+          "epoch": 39,
+          "selection_value": 0.347881041015937
+        },
+        {
+          "seed": 44,
+          "epoch": 66,
+          "selection_value": 0.34627635679438007
+        }
+      ],
+      "test_metrics": {
+        "minADE": 0.12004690500064524,
+        "minFDE": 0.21673946796952545,
+        "pairedFDE": 0.26202640691724705,
+        "actors": 5910,
+        "num_modes": 20,
+        "units": "m"
+      },
+      "sha256": "05e4146f6847017c143f58c796587c2991aa5c73a6bc79bcf1702cd6e38795cf",
+      "bytes": 1481801,
+      "original_checkpoint_sha256": "1e8b38bc3c737e3a42184e09aa2ec5639ccc89af70565c6bcb8a33a516d0a1fb",
+      "weights_unchanged": true
+    },
+    {
+      "setting": "sdd",
+      "file": "checkpoints/sdd.pt",
+      "seed": 44,
+      "epoch": 64,
+      "neighbors": 8,
+      "validation_selection_value": 13.421267801071146,
+      "validation_candidates": [
+        {
+          "seed": 42,
+          "epoch": 64,
+          "selection_value": 13.915741837476965
+        },
+        {
+          "seed": 43,
+          "epoch": 20,
+          "selection_value": 14.045963766910617
+        },
+        {
+          "seed": 44,
+          "epoch": 64,
+          "selection_value": 13.421267801071146
+        }
+      ],
+      "test_metrics": {
+        "minADE": 7.440269026414123,
+        "minFDE": 11.95527754031904,
+        "pairedFDE": 14.313807943964244,
+        "actors": 2829,
+        "num_modes": 20,
+        "units": "px"
+      },
+      "sha256": "a322afebdae84677cdefabe951ff84f1477addc76695845c3dfe72f0443d38e5",
+      "bytes": 1481809,
+      "original_checkpoint_sha256": "5d21efb460fce338a72ade7f0d1eb5c8ee568045b668e2c33147a4402701e990",
+      "weights_unchanged": true
+    },
+    {
+      "setting": "nba",
+      "file": "checkpoints/nba.pt",
+      "seed": 43,
+      "epoch": 97,
+      "neighbors": 10,
+      "validation_selection_value": 1.31601640822978,
+      "validation_candidates": [
+        {
+          "seed": 42,
+          "epoch": 97,
+          "selection_value": 1.322098401962991
+        },
+        {
+          "seed": 43,
+          "epoch": 97,
+          "selection_value": 1.31601640822978
+        },
+        {
+          "seed": 44,
+          "epoch": 96,
+          "selection_value": 1.3260832199010828
+        }
+      ],
+      "test_metrics": {
+        "minADE": 0.7926262685287541,
+        "minFDE": 1.0419907158465125,
+        "pairedFDE": 1.57105549650304,
+        "actors": 137500,
+        "num_modes": 20,
+        "units": "nba_m"
+      },
+      "sha256": "542a117eb74c2077e865724f99e9bb9f9804b5864402e68fa2434f2defcbd8a2",
+      "bytes": 1491537,
+      "original_checkpoint_sha256": "f4341d78e80d6f965ff83056691984efe9b8268b25ed94836427147262d4ff33",
+      "weights_unchanged": true
+    }
+  ]
+}

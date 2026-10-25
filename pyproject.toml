@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "candidate-social"
+version = "1.0.0"
+description = "Candidate-conditioned hierarchical trajectory refinement: models and evaluation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "torch>=2.1,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=7,<10"]
+
+[project.scripts]
+candidate-social = "candidate_social.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["candidate_social*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
